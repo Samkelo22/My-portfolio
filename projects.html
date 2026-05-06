@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Samkelo Mabena</title>
+  <meta name="description" content="A collection of full-stack, frontend, and backend projects by Samkelo Mabena." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/"><span class="brand-dot"></span>SM</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">All work</span>
+          <h2>Projects</h2>
+          <p style="color:var(--color-text-muted); margin-top:var(--space-3); max-width:560px;">A mix of full-stack apps, frontend experiments, and backend services. Filter by category below.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+          <button class="filter-btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="filter-btn" data-filter="backend" aria-pressed="false">Backend</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> Samkelo Mabena</span>
+      <span>Built with HTML, CSS &amp; vanilla JS</span>
+    </div>
+  </footer>
+
+  <script src="/js/projects.js"></script>
+  <script src="/js/render-projects.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samkelo Mabena — Software Engineer</title>
+  <meta name="description" content="Portfolio of Samkelo Mabena, a Full-Stack Developer based in Lisbon, Portugal. Building fast, accessible web products." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/"><span class="brand-dot"></span>SM</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="eyebrow reveal">Available for work</span>
+        <h1 class="reveal">Hey, I'm Samkelo Mabena.<br/>I build <span class="accent">things for the web</span>.</h1>
+        <p class="lead reveal">Software Engineer based in Pretoria, Gauteng. I design and ship clean, fast, accessible web products — from landing pages to full-stack apps.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="/projects">View projects <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="/contact">Get in touch</a>
+        </div>
+        <div class="hero-meta reveal">
+          <span><span class="status-dot"></span>Currently open to opportunities</span>
+          <span>📍 Pretoria, Gauteng</span>
+          <span>✉ samkelo12ee@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="container">
+      <div class="stats reveal">
+        <div><div class="stat-num">3<span class="accent">+</span></div><div class="stat-label">Projects shipped</div></div>
+        <div><div class="stat-num">2<span class="accent">y</span></div><div class="stat-label">Years coding</div></div>
+        <div><div class="stat-num">5<span class="accent">k</span></div><div class="stat-label">GitHub commits</div></div>
+        <div><div class="stat-num">∞</div><div class="stat-label">Cups of coffee</div></div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2>Featured projects</h2>
+        </div>
+        <div class="projects-grid" id="featured-projects"></div>
+        <div style="margin-top: var(--space-6); text-align: center;" class="reveal">
+          <a class="btn btn-ghost" href="/projects">See all projects <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> Samkelo Mabena</span>
+      <span>Built with HTML, CSS &amp; vanilla JS</span>
+    </div>
+  </footer>
+
+  <script src="/js/projects.js"></script>
+  <script src="/js/render-projects.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
