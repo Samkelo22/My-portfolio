@@ -1,4 +1,4 @@
-# Alex Carter — Portfolio
+# Samkelo Mabena — Portfolio
 
 A minimal, accessible developer portfolio built with vanilla **HTML + CSS + JavaScript**. No build step, no frameworks, no npm install — just open and ship.
 
