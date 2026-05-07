@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Samkelo Mabena — Portfolio
 
 A minimal, accessible developer portfolio built with vanilla **HTML + CSS + JavaScript**. No build step, no frameworks, no npm install — just open and ship.
@@ -132,3 +133,7 @@ Both work out of the box. For GitHub Pages, links to `/about` will need either f
 ## 📝 License
 
 MIT — do whatever you want.
+=======
+# My-portfolio
+This is my website with all my projexts
+>>>>>>> 4cff8159f2957a6d22d791b5ba16bfa96df21e09
