@@ -18,10 +18,13 @@
     const video = p.video
       ? `<video controls preload="metadata" src="${escapeHTML(p.video)}" aria-label="Walkthrough of ${escapeHTML(p.title)}"></video>`
       : '';
+    const status = p.status
+      ? `<span class="status-badge">🚧 ${escapeHTML(p.status)}</span>`
+      : '';
 
     return `
       <article class="project-card reveal" data-filters="${p.filters.join(' ')}">
-        <div class="project-thumb" style="background-image:url('${escapeHTML(p.thumb)}')" role="img" aria-label="${escapeHTML(p.title)} screenshot"></div>
+        <div class="project-thumb" style="background-image:url('${escapeHTML(p.thumb)}')" role="img" aria-label="${escapeHTML(p.title)} screenshot">${status}</div>
         <div class="project-body">
           <h3 class="project-title">${escapeHTML(p.title)}</h3>
           <p class="project-desc">${escapeHTML(p.description)}</p>
